@@ -1,0 +1,10 @@
+{
+  "name": "风格迁移",
+  "description": "将图片逐步转换为特定艺术风格",
+  "mode": "serial",
+  "steps": [
+    "Convert to line art sketch",
+    "Add watercolor painting style",
+    "Enhance details and textures"
+  ]
+}

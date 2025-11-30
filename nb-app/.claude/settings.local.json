@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun build:*)",
+      "Bash(npm run build:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version)",
+      "Bash(curl:*)",
+      "Bash(bash)",
+      "Bash(export PATH=\"$HOME/.bun/bin:$PATH\")",
+      "Bash(bun:*)",
+      "Bash(chmod:*)",
+      "Bash(git rm:*)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

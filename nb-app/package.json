@@ -1,0 +1,38 @@
+{
+  "name": "cNB",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "preinstall": "npx only-allow bun",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "bun": ">=1.2.1",
+    "npm": "please-use-bun",
+    "yarn": "please-use-bun",
+    "pnpm": "please-use-bun"
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "idb-keyval": "^6.2.2",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.554.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.2",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "^24.10.1",
+    "preact": "^10.27.2",
+    "tailwindcss": "^4.1.17",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-pwa": "^1.1.0"
+  }
+}

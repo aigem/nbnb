@@ -1,0 +1,17 @@
+{
+  "name": "快速炼丹数据集生成",
+  "description": "AI-toolkit训练数据集（多角度/场景/姿势）",
+  "mode": "parallel",
+  "steps": [
+    "Front view, standing pose, neutral expression, white background, maintain character consistency",
+    "Side view profile, standing pose, looking forward, white background, maintain character consistency",
+    "Back view, standing pose, white background, maintain character consistency",
+    "Three-quarter view, slight smile, indoor setting with soft lighting, maintain character consistency",
+    "Close-up portrait, detailed facial features, natural lighting, maintain character consistency",
+    "Full body shot, walking pose, outdoor urban environment, maintain character consistency",
+    "Sitting pose, relaxed posture, indoor casual setting, maintain character consistency",
+    "Action pose, dynamic movement, plain background, maintain character consistency",
+    "Top-down view bird eye angle, centered composition, minimal background, maintain character consistency",
+    "Low angle view, confident pose, dramatic lighting, maintain character consistency"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "渐进优化",
+  "description": "逐步提升图片质量和细节",
+  "mode": "serial",
+  "steps": [
+    "Enhance image resolution and clarity",
+    "Improve lighting and shadows",
+    "Add fine details"
+  ]
+}

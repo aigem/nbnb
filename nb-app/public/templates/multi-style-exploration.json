@@ -1,0 +1,11 @@
+{
+  "name": "多风格探索",
+  "description": "同时生成多种艺术风格版本",
+  "mode": "parallel",
+  "steps": [
+    "Convert to anime style",
+    "Convert to oil painting style",
+    "Convert to cyberpunk style",
+    "Convert to minimalist style"
+  ]
+}

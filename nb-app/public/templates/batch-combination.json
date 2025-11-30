@@ -1,0 +1,10 @@
+{
+  "name": "批量组合生成",
+  "description": "每张图片×每条提示词（n×m张）",
+  "mode": "combination",
+  "steps": [
+    "Convert to anime style, vibrant colors",
+    "Convert to oil painting style, impressionist",
+    "Convert to pencil sketch, detailed shading"
+  ]
+}
