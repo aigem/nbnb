@@ -137,7 +137,7 @@ const App: React.FC = () => {
              <img src="/kuai.svg" alt="Logo" className="h-full w-full object-cover" />
           </a>
           <div className="hidden sm:block">
-            <h1 className="text-lg font-bold tracking-tight text-amber-600 dark:text-amber-400">Nano Banana Pro</h1>
+            <h1 className="text-lg font-bold tracking-tight text-amber-600 dark:text-amber-400">NB Nano Banana</h1>
             <p className="text-xs text-gray-500 dark:text-gray-400">
               由 <a href="https://api.kuai.host" target="_blank" rel="noopener noreferrer" className="hover:text-amber-500 hover:underline transition-colors">酷爱API</a> 赞助联合开发
             </p>

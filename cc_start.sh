@@ -52,7 +52,7 @@ if [ ! -f ".env" ]; then
     echo "     - ANTHROPIC_AUTH_TOKEN: 你的 API Key"
     echo "     - ANTHROPIC_BASE_URL: API 基础 URL"
     echo ""
-    echo -e "  3. 获取 API Key: ${BLUE}https://apis.kuai.host/register?aff=uU68${NC}"
+    echo -e "  3. 获取 API Key: ${BLUE}https://api.kuai.host/register?aff=z2C8${NC}"
     echo ""
     exit 1
 fi
@@ -68,14 +68,14 @@ if [ -z "$ANTHROPIC_AUTH_TOKEN" ] || [ "$ANTHROPIC_AUTH_TOKEN" = "your_api_key_h
     print_error "ANTHROPIC_AUTH_TOKEN 未设置或使用了默认值！"
     echo ""
     print_info "请编辑 .env 文件，设置你的真实 API Key"
-    echo -e "  获取地址: ${BLUE}https://apis.kuai.host/register?aff=uU68${NC}"
+    echo -e "  获取地址: ${BLUE}https://api.kuai.host/register?aff=z2C8${NC}"
     echo ""
     exit 1
 fi
 
 if [ -z "$ANTHROPIC_BASE_URL" ]; then
     print_warning "ANTHROPIC_BASE_URL 未设置，使用默认值"
-    export ANTHROPIC_BASE_URL="https://newapi.netlib.re"
+    export ANTHROPIC_BASE_URL="https://api.kuai.host"
 fi
 
 print_success "配置加载成功"

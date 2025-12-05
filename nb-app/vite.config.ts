@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => {
           manifest: {
             name: 'nbnb',
             short_name: 'nbnb',
-            description: 'Nano Banana Pro在线客户端',
+            description: 'NB Nano Banana在线客户端',
             theme_color: '#ffffff',
             background_color: '#ffffff',
             display: 'standalone',

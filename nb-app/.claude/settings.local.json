@@ -11,7 +11,8 @@
       "Bash(bun:*)",
       "Bash(chmod:*)",
       "Bash(git rm:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": []

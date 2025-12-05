@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-nbnb (Nano Banana Pro) is a pure frontend web application built with React/Preact that provides a chat interface for interacting with Google's Gemini 3 Pro AI model. The application supports multimodal inputs (text and images), displays AI thinking processes, includes mini-games for waiting periods, and manages image history with persistent storage.
+nbnb (NB Nano Banana) is a pure frontend web application built with React/Preact that provides a chat interface for interacting with Google's Gemini 3 Pro AI model. The application supports multimodal inputs (text and images), displays AI thinking processes, includes mini-games for waiting periods, and manages image history with persistent storage.
 
 **Key Features:**
 - **Multimodal Chat**: Text and image inputs with streaming responses
