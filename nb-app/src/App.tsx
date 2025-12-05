@@ -168,8 +168,7 @@ const App: React.FC = () => {
               <Download className="h-6 w-6 animate-attract" />
             </button>
           )}
-
-          {/* <a
+          <a
             href="https://github.com/aigem/nb"
             target="_blank"
             rel="noopener noreferrer"
@@ -177,7 +176,7 @@ const App: React.FC = () => {
             title="GitHub 仓库"
           >
             <Github className="h-6 w-6 animate-heartbeat-mixed group-hover:animate-none" />
-          </a> */}
+          </a>
 
           {/* API Key button - Always visible for setting/changing key */}
           <button

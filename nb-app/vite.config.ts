@@ -29,8 +29,8 @@ export default defineConfig(({ mode }) => {
             enabled: true
           },
           manifest: {
-            name: 'cNB',
-            short_name: 'cNB',
+            name: 'nbnb',
+            short_name: 'nbnb',
             description: 'Nano Banana Pro在线客户端',
             theme_color: '#ffffff',
             background_color: '#ffffff',

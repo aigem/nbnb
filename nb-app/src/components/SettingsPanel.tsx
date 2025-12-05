@@ -288,7 +288,7 @@ export const SettingsPanel: React.FC = () => {
               className="w-full flex items-center justify-center gap-1.5 sm:gap-2 rounded-lg border border-purple-200 dark:border-purple-500/30 bg-purple-50 dark:bg-purple-500/10 p-2.5 sm:p-3 text-purple-600 dark:text-purple-400 hover:bg-purple-100 dark:hover:bg-purple-500/20 transition"
             >
               <Download className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-              <span className="text-xs sm:text-sm">安装 cNB 应用</span>
+              <span className="text-xs sm:text-sm">安装 nbnb 应用</span>
             </button>
             <p className="mt-1.5 sm:mt-2 text-[10px] sm:text-xs text-center text-gray-400 dark:text-gray-500">
               安装到您的设备以获得原生应用体验。

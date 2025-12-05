@@ -241,7 +241,7 @@ fi
 #=============================================================================
 print_header "启动开发服务器"
 
-print_info "项目名称: cNB"
+print_info "项目名称: nbnb"
 print_info "开发服务器地址: http://localhost:$PORT"
 print_info "按 Ctrl+C 停止服务器"
 echo ""
