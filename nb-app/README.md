@@ -181,7 +181,7 @@ http://localhost:3000/?endpoint=https://my-proxy.com&model=gemini-2.0-flash
 
 ### 3. 图片上传方式
 
-支持两种图片上传方式：
+支持三种图片上传方式：
 
 #### 方式一：点击上传
 - 点击输入框左侧的 📷 图标
@@ -191,6 +191,12 @@ http://localhost:3000/?endpoint=https://my-proxy.com&model=gemini-2.0-flash
 - 直接将图片拖拽到输入框区域
 - 看到蓝色高亮边框后松开鼠标
 - 图片自动上传并显示预览
+
+#### 方式三：移动端拍照 📱✨ (新增)
+- **仅手机端可见**：屏幕宽度 < 640px 时自动显示拍照按钮
+- **位置**：普通输入框和批量编排面板均支持
+- **操作**：点击 📷 拍照按钮直接调用摄像头
+- **即拍即用**：无需保存到相册，拍摄后立即加入参考图列表
 
 ### 4. 图片历史记录 ✨ (新增)
 
@@ -244,6 +250,39 @@ http://localhost:3000/?endpoint=https://my-proxy.com&model=gemini-2.0-flash
 - **多风格探索**：并行，4步（同时生成 4 种不同风格）
 - **数据集生成**：并行，10步（AI-toolkit 训练数据集，多角度/姿势）
 - **批量组合**：组合，3步（每张图×每个风格）
+
+#### 自定义 JSON 模板 ✨ (高级功能)
+
+所有预设模板存储在 `public/templates/*.json`，支持自由编辑和扩展：
+
+**添加新模板步骤：**
+1. 在 `public/templates/` 目录下创建新的 `.json` 文件
+2. 使用以下结构编写模板：
+   ```json
+   {
+     "name": "我的自定义工作流",
+     "description": "简短描述这个模板的用途",
+     "mode": "serial",
+     "steps": [
+       "第一步：将照片转换为线稿",
+       "第二步：添加水彩风格",
+       "第三步：增强细节和色彩"
+     ]
+   }
+   ```
+3. 将文件路径添加到 `src/services/pipelineTemplateService.ts` 的 `TEMPLATE_FILES` 数组中
+4. 刷新页面，新模板即可在下拉菜单中使用
+
+**模板字段说明：**
+- `name`: 模板名称（显示在下拉菜单中）
+- `description`: 模板描述（可选）
+- `mode`: 执行模式，可选值：`"serial"` | `"parallel"` | `"combination"`
+- `steps`: 提示词数组，每个元素是一个步骤的提示词字符串
+
+**修改现有模板：**
+- 直接编辑 `public/templates/` 下的 JSON 文件
+- 修改 `steps` 数组中的提示词内容
+- 保存后刷新页面即可生效（无需重新编译）
 
 ### 7. 高级设置
 
@@ -318,5 +357,5 @@ AGPL-3.0
 
 ## 🙏 致谢
 
-- 原项目：faithleysath/UndyDraw
+- 参考项目：faithleysath/UndyDraw
 - API 赞助：[Kuai API](https://api.kuai.host/register?aff=z2C8)
