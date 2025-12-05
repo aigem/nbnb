@@ -6,7 +6,7 @@ import { ToastContainer } from './components/ui/ToastContainer';
 import { GlobalDialog } from './components/ui/GlobalDialog';
 import { formatBalance } from './services/balanceService';
 import { preloadPrompts } from './services/promptService';
-import { Settings, Sun, Moon, Github, ImageIcon, DollarSign, Download, Sparkles, Key } from 'lucide-react';
+import { Settings, Sun, Moon, Github, ImageIcon, DollarSign, Download, Sparkles, Key, BookOpen } from 'lucide-react';
 import { lazyWithRetry, preloadComponents } from './utils/lazyLoadUtils';
 
 // Lazy load components
@@ -168,6 +168,15 @@ const App: React.FC = () => {
               <Download className="h-6 w-6 animate-attract" />
             </button>
           )}
+          <a
+            href="https://www.kuai.host/7798503m0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group rounded-lg p-2 text-gray-500 dark:text-gray-400 transition hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+            title="使用教程"
+          >
+            <BookOpen className="h-6 w-6 group-hover:scale-110 transition-transform" />
+          </a>
           <a
             href="https://github.com/aigem/nb"
             target="_blank"
