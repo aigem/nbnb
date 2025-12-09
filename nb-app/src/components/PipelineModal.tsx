@@ -134,8 +134,9 @@ export const PipelineModal: React.FC<Props> = ({ isOpen, onClose, onExecute }) =
       alert('请至少添加一个步骤');
       return;
     }
-    if (attachments.length === 0) {
-      alert('请至少上传一张初始图片');
+    // 只有组合模式需要至少一张图片（n图×m词）
+    if (mode === 'combination' && attachments.length === 0) {
+      alert('批量组合模式需要至少上传一张初始图片');
       return;
     }
     onExecute(mode, validSteps, attachments);
@@ -330,10 +331,15 @@ export const PipelineModal: React.FC<Props> = ({ isOpen, onClose, onExecute }) =
           {/* 初始图片 */}
           <section>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
-              初始参考图 (最多14张)
+              初始参考图 {mode === 'combination' ? '(必需，最多14张)' : '(可选，最多14张)'}
               {mode === 'combination' && (
                 <span className="block text-xs font-normal text-amber-600 dark:text-amber-400 mt-1">
                   💡 每张图片将与每条提示词组合生成，总共 {attachments.length} × {steps.length} = {attachments.length * steps.length} 张
+                </span>
+              )}
+              {mode !== 'combination' && (
+                <span className="block text-xs font-normal text-gray-500 dark:text-gray-400 mt-1">
+                  💡 {mode === 'serial' ? '串行模式支持纯文本生成，也可上传图片作为初始参考' : '并行模式支持纯文本生成，也可上传图片作为初始参考'}
                 </span>
               )}
             </label>
