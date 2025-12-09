@@ -439,8 +439,8 @@ export const PipelineModal: React.FC<Props> = ({ isOpen, onClose, onExecute }) =
                       value={step.prompt}
                       onChange={(e) => handleStepChange(index, 'prompt', e.target.value)}
                       placeholder={`步骤 ${index + 1} 的提示词...`}
-                      className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm resize-none focus:outline-none focus:ring-2 focus:ring-purple-500"
-                      rows={2}
+                      className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-sm resize-y focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[80px]"
+                      rows={3}
                     />
 
                     {/* 模型选择器 */}

@@ -178,7 +178,7 @@ const App: React.FC = () => {
             <BookOpen className="h-6 w-6 group-hover:scale-110 transition-transform" />
           </a>
           <a
-            href="https://github.com/aigem/nb"
+            href="https://github.com/aigem/nbnb"
             target="_blank"
             rel="noopener noreferrer"
             className="group rounded-lg p-2 text-gray-500 dark:text-gray-400 transition hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
